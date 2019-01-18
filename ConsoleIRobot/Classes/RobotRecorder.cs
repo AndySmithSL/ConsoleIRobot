@@ -21,7 +21,7 @@ namespace ConsoleIRobot.Classes
         public void Replay(IRobot robot)
         {
             Robot = robot;
-            Robot.repl
+            //Robot.repl
         }
     }
 }
