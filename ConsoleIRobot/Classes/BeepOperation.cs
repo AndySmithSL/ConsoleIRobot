@@ -1,18 +1,13 @@
 ﻿using ConsoleIRobot.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConsoleIRobot.Classes
 {
-    public class BeepAction : IRobotAction
+    public class BeepOperation : IRobotOperation
     {
         public int NumberOfBeeps { get; set; }
         public double Volume { get; set; }
 
-        public BeepAction(int numberOfBeeps, double volume)
+        public BeepOperation(int numberOfBeeps, double volume)
         {
             NumberOfBeeps = numberOfBeeps;
             Volume = volume;

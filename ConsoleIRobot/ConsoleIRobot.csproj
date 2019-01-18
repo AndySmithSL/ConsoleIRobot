@@ -43,13 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\BeepAction.cs" />
-    <Compile Include="Classes\MoveForwardAction.cs" />
+    <Compile Include="Classes\BeepOperation.cs" />
+    <Compile Include="Classes\MoveForwardOperation.cs" />
     <Compile Include="Classes\RobotOne.cs" />
     <Compile Include="Classes\RobotRecorder.cs" />
-    <Compile Include="Classes\RotateAction.cs" />
+    <Compile Include="Classes\RotateOperation.cs" />
     <Compile Include="Interfaces\IRobot.cs" />
-    <Compile Include="Interfaces\IRobotAction.cs" />
+    <Compile Include="Interfaces\IRobotOperation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -1,17 +1,12 @@
 ﻿using ConsoleIRobot.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConsoleIRobot.Classes
 {
-    public class RotateAction : IRobotAction
+    public class RotateOperation : IRobotOperation
     {
         public double Angle { get; set; }
 
-        public RotateAction(double angle)
+        public RotateOperation(double angle)
         {
             Angle = angle;
         }

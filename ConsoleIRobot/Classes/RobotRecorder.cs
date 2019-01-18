@@ -7,18 +7,21 @@ using System.Threading.Tasks;
 
 namespace ConsoleIRobot.Classes
 {
-    public class RobotRecorder
+    public class RobotRecorder: IRobotOperation
     {
-        List<IRobotAction> actions = new List<IRobotAction>();
+        IRobot robot = null;
 
+        public IRobot Robot { get => robot; set => robot = value; }
 
-
-        void Replay(IRobot robot)
+        public RobotRecorder(IRobot robot)
         {
-            foreach (var item in actions)
-            {
-                item.Replay(robot);
-            }
+            Robot = robot;
+        }
+
+        public void Replay(IRobot robot)
+        {
+            Robot = robot;
+            Robot.repl
         }
     }
 }

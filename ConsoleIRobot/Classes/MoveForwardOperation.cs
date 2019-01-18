@@ -2,11 +2,11 @@
 
 namespace ConsoleIRobot.Classes
 {
-    public class MoveForwardAction : IRobotAction
+    public class MoveForwardOperation : IRobotOperation
     {
         public int NumberOfSteps { get; set; }
 
-        public MoveForwardAction(int numberOfSteps)
+        public MoveForwardOperation(int numberOfSteps)
         {
             NumberOfSteps = numberOfSteps;
         }
